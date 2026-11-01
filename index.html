@@ -30,9 +30,21 @@
         font-size: clamp(1.8rem, 3vw, 3rem);
         font-weight: 700;
       }
+
+      button.message {
+        cursor: pointer;
+        font-family: inherit;
+      }
+
+      #greeting {
+        margin-top: 1rem;
+        color: #f8fafc;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
-    <div class="message">Hello World, I'm online</div>
+    <button class="message" type="button" onclick="document.getElementById('greeting').hidden = false">Hello World</button>
+    <div id="greeting" hidden>Ciao!</div>
   </body>
 </html>
